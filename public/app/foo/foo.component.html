@@ -1,0 +1,42 @@
+<div class="container">
+  <!-- ##################################################################### -->
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <div class="page-header">
+        <h1>Angular HTTP Client</h1>
+      </div>
+    </div>
+  </div>
+  <!-- ##################################################################### -->
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <div [hidden]="submitted">
+        <p class="lead">Insert the request URL</p>
+        <p>Examples: <code>start</code>, <code>stop</code>, <code>restart</code></p>
+        <div class="form-group">
+          <input type="text" class="form-control" #box (keyup)="0" >
+        </div>
+        <button class="btn btn-primary" (click)="doConfirm()">Submit</button>
+      </div>
+      <div [hidden]="!submitted">
+        <p class="lead">You have inserted</p>
+        <pre>{{ box.value }}</pre>
+        <button class="btn btn-default" (click)="submitted=false">Edit</button>
+        <button class="btn btn-primary" (click)="doRequest(box.value)">Send</button>
+      </div>
+      <hr>
+    </div>
+  </div>
+  <!-- ##################################################################### -->
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <p class="lead">Response logs</p>
+      <ul>
+        <li *ngFor="let req of reqs">
+          {{ req }}
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- ##################################################################### -->
+</div>

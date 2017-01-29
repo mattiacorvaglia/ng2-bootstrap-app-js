@@ -1,0 +1,14 @@
+{
+  "name": "angular2-js-app",
+  "version": "1.0.0",
+  "description": "Bootstrap application for Angular2 written in JavaScript",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Mattia Corvaglia <corvagliamattia@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}

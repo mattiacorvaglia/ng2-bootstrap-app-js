@@ -1,0 +1,26 @@
+{
+  "name": "angular2-js-app",
+  "version": "1.0.0",
+  "description": "Bootstrap application for Angular2 written in JavaScript",
+  "main": "server.js",
+  "moduleType": [
+    "es6",
+    "globals",
+    "node"
+  ],
+  "authors": [
+    "Mattia Corvaglia <corvagliamattia@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "fontawesome": "~4.7.0",
+    "bootstrap": "~3.3.7"
+  }
+}
